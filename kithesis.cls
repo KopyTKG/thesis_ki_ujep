@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{kitheses}[2021/11/19 Thesis of KI UJEP]
+\ProvidesClass{kithesis}[2021/11/19 Thesis of KI UJEP]
 
 \RequirePackage{ifthen}
 \RequirePackage{iftex}
