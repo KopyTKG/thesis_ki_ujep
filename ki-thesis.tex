@@ -17,7 +17,7 @@
 \usepackage{array}
 \usepackage{longtable}
 \usepackage{afterpage}
-\usepackage{microtype}  % přesnější typografie
+\usepackage{microtype} % přesnější typografie
 
 % workaround for imcompatibility of czech babel and biblatex
 
@@ -25,15 +25,14 @@
 \else
 \usepackage{etoolbox}
 \makeatletter
-\newcommand\my@hsyphen{-}
+\newcommand\my@hyphen{-}
 \newcommand\my@apostroph{'}
+\newcommand\fail{}
 \patchcmd\select@language{-}{\my@hyphen }{}{\fail}
 \patchcmd\select@language{'}{\my@apostroph }{}{\fail}
 \makeatother
 \fi
 
-\usepackage[style=iso-numeric,shortnumeration=true]{biblatex}
-\addbibresource{thesis.bib}
 
 
 % fonty lze měnit (detaily viz sekce fonty)
@@ -52,6 +51,9 @@
 \fi
 
 \usepackage{csquotes} % uvozovky
+
+\usepackage[style=iso-numeric,shortnumeration=true]{biblatex}
+\addbibresource{thesis.bib}
 
 % sazba ukázek kódu 
 
